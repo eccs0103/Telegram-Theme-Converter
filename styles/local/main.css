@@ -1,0 +1,13 @@
+body {
+	position: fixed;
+	inset: 0;
+}
+
+main {
+	width: 100%;
+	max-width: 100vmin;
+}
+
+main > div.-container {
+	width: 100%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type: text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="application-name" content="">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Main</title>
+	<link rel="shortcut icon" href="" media="(prefers-color-scheme: light)">
+	<link rel="shortcut icon" href="" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="stylesheet" href="/styles/themes/material.css">
+	<link rel="stylesheet" href="/styles/local/main.css">
+	<script src="/scripts/components/archive.js" defer></script>
+	<script src="/scripts/components/templates.js" defer></script>
+	<script src="/scripts/components/informant.js" defer></script>
+	<script src="/scripts/components/manager.js" defer></script>
+	<script src="/scripts/structure.js" defer></script>
+	<script src="/scripts/main.js" defer></script>
+</head>
+
+<body class="flex column secondary-centered">
+	<main class="with-padding large-padding flex">
+		<div class="-container layer rounded with-padding flex column secondary-centered with-gap">
+			<div class="flex secondary-centered with-gap">
+				<input id="data-from" type="file" hidden>
+				<label for="data-from" role="checkbox" aria-checked="false" class="depth rounded with-padding flex secondary-centered with-gap">
+					<img src="../resources/file.png" alt="From" class="icon">
+					<span>From</span>
+				</label>
+				<img src="../resources/right.png" alt="→" class="icon">
+				<input id="data-to" type="file" hidden>
+				<label for="data-to" role="checkbox" aria-checked="false" class="depth rounded with-padding flex secondary-centered with-gap">
+					<img src="../resources/file.png" alt="To" class="icon">
+					<span>To</span>
+				</label>
+			</div>
+			<input id="min-factor" type="range" min="0" max="1" step="0.1" class="depth rounded">
+			<button id="convert-data" disabled class="layer rounded with-padding highlight-background">Convert</button>
+		</div>
+	</main>
+</body>
+
+</html>
